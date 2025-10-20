@@ -1,0 +1,71 @@
+Bài 1:
+git clone https://github.com/25174600022-Nguyen-Hoang-Tien/25174600022_Nguy-n_Ho-ng_Ti-n_bai_tap.git
+cd 25174600022_Nguy-n_Ho-ng_Ti-n_bai_tap
+Bài 2:
+git add README.md
+git commit -m "Cập nhật nội dung README.md"
+git push origin main
+Bài 3:
+git checkout -b branch_1
+echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+git add .
+git commit -m "Thêm text_branch_1.txt"
+git push origin branch_1
+
+git checkout main
+git checkout -b branch_2
+echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+git add .
+git commit -m "Thêm text_branch_2.txt"
+git push origin branch_2
+
+git checkout main
+git checkout -b branch_3
+echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+git add .
+git commit -m "Thêm text_branch_3.txt"
+git push origin branch_3
+
+git checkout main
+git checkout -b branch_4
+echo "Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+git add .
+git commit -m "Thêm text_branch_4.txt"
+git push origin branch_4
+Bài 4:
+git branch -d branch_4
+git branch --list
+git branch -r
+Bài 5:
+git checkout main
+git pull origin main
+Bài 6:
+mkdir main_folder
+cd main_folder
+echo "File 1" > main_txt_1.txt
+echo "File 2" > main_txt_2.txt
+echo "File 3" > main_txt_3.txt
+cd ..
+git add .
+git commit -m "Thêm thư mục main_folder và các file txt"
+git push origin main
+Bài 7:
+git checkout branch_1
+git checkout -b branch_5
+git add text_branch_1.txt
+git commit -m "Cập nhật nội dung text_branch_1.txt trong branch_5"
+git push origin branch_5
+git branch -d branch_5
+git push origin --delete branch_5
+Bài 8:
+Bài 9:
+git branch -d branch_2
+git branch -d branch_3
+git branch -d branch_4
+git push origin --delete branch_2
+git push origin --delete branch_3
+git push origin --delete branch_4
+git checkout branch_1
+git pull origin main
+git push origin branch_1
+
